@@ -8,7 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
-      uses: actions/checkout@v2
-    - name: Fetch latest data from the API endpoint
-      run: |-
-        python3 phd_scraper.py
+      uses: actions/checkout@v3
+    - name: Set-up python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+    - name: Install packages
+      run: pip install -r requirements.txt
+    - name: Run scraper
+      run: python phd_scraper.py
