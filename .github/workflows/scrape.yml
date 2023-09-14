@@ -1,0 +1,14 @@
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 8 * * *' # every twenty minutes
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Fetch latest data from the API endpoint
+      run: |-
+        python3 phd_scraper.py
