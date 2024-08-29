@@ -352,3 +352,4 @@
 2024-08-26 08:21:50,193 - INFO: What a pity. None of the PhD students on your watchlist are defending in the near future.
 2024-08-27 08:23:23,104 - ERROR: HTTPSConnectionPool(host='www.kuleuven.be', port=443): Max retries exceeded with url: /doctoraatsverdediging/overzicht/F_50000486_actueel.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc2e07260e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
 2024-08-28 08:20:43,867 - INFO: What a pity. None of the PhD students on your watchlist are defending in the near future.
+2024-08-29 08:21:12,467 - INFO: What a pity. None of the PhD students on your watchlist are defending in the near future.
